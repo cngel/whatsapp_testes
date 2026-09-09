@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cngel/whatsapp_testes/issues"
   },
-  "homepage": "https://github.com/cngel/whatsapp_testes#readme"
+  "homepage": "https://github.com/cngel/whatsapp_testes#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
