@@ -30,5 +30,6 @@ app.post("/webhook/whatsapp", (req, res) => {
 
 app.listen(3000, () => {
     console.log("Servidor na porta 3000");
-    console.log(procwess.env.WHATSAPP_VERIFY_TOKEN);
+    console.log("Token de verificação do WhatsApp:");
+    console.log(process.env.WHATSAPP_VERIFY_TOKEN);
 });

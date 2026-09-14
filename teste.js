@@ -1,6 +1,6 @@
 const readline = require("readline");
 
-const ACCESS_TOKEN = "EAAWkWA0JaAABSXJz6prwdojPZCXbd3e9vVxCgNyhGNVO0yvqzP19FtUqBtjvbCvhWqJZAyJT0EVHBq3PZBI3OzLo67QBrDndLv6DX91cJBNGh5qm3YaiQw1RjvVI6ZARDCwcsd5TuMCUHSYCffp6kc0xZBS2CWBZBVNMxFU6SsYPGZCGniNwMldHtlojtLre1zjAUGasYDrW3nbhLXZAJnFDytymDVfNGTf3OdkW19fV9FWZASU7OY9HLgXfkuJfnmgIhA4REj8320ZB06zJrpPbpoaklB";
+const ACCESS_TOKEN="EAAWkWA0JaAABSR71eK6o3efKV64NfbV60ZC6cCUl7t7OBHuDv0mLWp7ExIhxgnZC2jiZCGdiarjcZCvNALq7buAj01tFVuIM91vHCrHZCjH0H4j1HSUAwpgYZAWTDb9GKXRJjSnKcSbinL7MnIZBHVXcgMXm5EljFjzQ2Y8ZAKgl7HrDmO3ZCfLFa7FWIJwIcrsTPWeB3IZATVRvDgDHh9xzezQGKtnYGhdOpezcaNxcyGQpixRjJZA3oMvH7066UPSxM9qBx0ZADwbEyMoIgmtZBIxNYknWJ"
 const PHONE_NUMBER_ID = "1290700977460964";
 const API_VERSION = "v25.0";
 
@@ -22,12 +22,9 @@ rl.question("Número do destinatário (ex: 244956002860): ", async (numero) => {
                 body: JSON.stringify({
                     messaging_product: "whatsapp",
                     to: numero.trim(),
-                    type: "template",
-                    template: {
-                        name: "hello_world",
-                        language: {
-                            code: "en_US"
-                        }
+                    type: "text",
+                    text: {
+                        body: "Teste da MarkSuite com integração do WhatsApp"
                     }
                 })
             }
