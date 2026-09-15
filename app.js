@@ -41,5 +41,7 @@ app.post("/webhook/whatsapp", (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+    console.log(`Servidor rodando na porta CARLOS ${PORT}`);
+    console.log(`Webhook de verificação disponível em: http://localhost:${PORT}/webhook/whatsapp`);
+    console.log(process.env.WHATSAPP_VERIFY_TOKEN);
 });
