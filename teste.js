@@ -1,6 +1,7 @@
 const readline = require("readline");
+require("dotenv").config();
 
-const ACCESS_TOKEN="EAAWkWA0JaAABSR71eK6o3efKV64NfbV60ZC6cCUl7t7OBHuDv0mLWp7ExIhxgnZC2jiZCGdiarjcZCvNALq7buAj01tFVuIM91vHCrHZCjH0H4j1HSUAwpgYZAWTDb9GKXRJjSnKcSbinL7MnIZBHVXcgMXm5EljFjzQ2Y8ZAKgl7HrDmO3ZCfLFa7FWIJwIcrsTPWeB3IZATVRvDgDHh9xzezQGKtnYGhdOpezcaNxcyGQpixRjJZA3oMvH7066UPSxM9qBx0ZADwbEyMoIgmtZBIxNYknWJ"
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 const PHONE_NUMBER_ID = "1290700977460964";
 const API_VERSION = "v25.0";
 
@@ -24,7 +25,7 @@ rl.question("Número do destinatário (ex: 244956002860): ", async (numero) => {
                     to: numero.trim(),
                     type: "text",
                     text: {
-                        body: "Teste da MarkSuite com integração do WhatsApp"
+                        body: "Teste para saber se és gay. Se a sms caio bem, então és gay. Se não, então és hetero. Boa sorte!"
                     }
                 })
             }
